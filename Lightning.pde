@@ -11,8 +11,9 @@ void setup()
 }
 void draw()
 {
+	medusaFace();
 
-	stroke((int)(Math.random()*250), (int)(Math.random()*250), (int)(Math.random()*250));
+	stroke((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
 
 	while (endX < 601) 
 	{
@@ -38,3 +39,14 @@ void mousePressed()
 
 }
 
+void medusaFace()
+{
+	stroke(193, 181, 164);
+	fill(216, 198, 175);
+	ellipse(300,300,250,250);
+	//eyes below
+	noStroke();
+	fill(132, 125, 115);
+	ellipse(300-50, 300-25, 30,30); //left eye
+	ellipse(300+50, 300-25,30,30);
+}
