@@ -48,5 +48,14 @@ void medusaFace()
 	noStroke();
 	fill(132, 125, 115);
 	ellipse(300-50, 300-25, 30,30); //left eye
-	ellipse(300+50, 300-25,30,30);
+	ellipse(300+50, 300-25,30,30); //right eye
+
+	//mouth
+	fill(99, 92, 82);
+	arc(300,330, 100, 100, 0, PI);
+	//tongue
+	// fill(247, 155, 140);
+	// arc(300, 315, 40, 20, PI, QUARTER_PI);
 }
+
+
